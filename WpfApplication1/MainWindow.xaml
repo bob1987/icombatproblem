@@ -1,0 +1,28 @@
+﻿<Window x:Class="PointOfSale.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PointOfSale"
+        mc:Ignorable="d"
+        Title="Point of Sale" Height="550" Width="600">
+    <Grid Margin="0,0,0,0">
+        <TextBox Name="Display" IsEnabled="false" MinHeight="35" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10,10,348.333,0" Width="235" TextAlignment="Right"></TextBox>
+        <Button Name="One" Tag="1"  Margin="10,65,508.333,405.66" Click="Update_Display">1</Button>
+        <Button Name="Two" Tag="2" Margin="90,65,428.333,405.667" Click="Update_Display">2</Button>
+        <Button Name="Three" Tag="3" Margin="170,65,348.333,405.667" Click="Update_Display">3</Button>
+        <Button Name="Four" Tag="4" Margin="10,120,508.333,350.667" Click="Update_Display">4</Button>
+        <Button Name="Five" Tag="5" Margin="90,120,428.333,350.667" Click="Update_Display">5</Button>
+        <Button Name="Six" Tag="6" Margin="170,120,348.333,350.667" Click="Update_Display">6</Button>
+        <Button Name="Seven" Tag="7" Margin="10,175,508.333,295.667" Click="Update_Display">7</Button>
+        <Button Name="Eight" Tag="8" Margin="90,175,428.333,295.667" Click="Update_Display">8</Button>
+        <Button Name="Nine" Tag="9" Margin="170,175,348.333,295.667" Click="Update_Display">9</Button>
+        <Button Name="Zero" Tag="0" Margin="90,230,428.333,240.667" Click="Update_Display">0</Button>
+        <Button Name="Clear" Margin="10,230,508.333,240.667" Click="Clear_Display">Clear</Button>
+        <Button Name="Back" Margin="170,230,348.333,240.667" Click="Backspace">Del</Button>
+        <Button Name="TotalButton" Margin="10,285,508.333,205.667" Click="Get_Inventory">Get Total</Button>
+        <Button Name="WithdrawButton" Margin="170,285,348.333,205.667" Click="Withdraw_Money">Withdraw</Button>
+        <Button Name="RestockButton" Margin="90,285,428.333,205.667" Click="Restock_Money">Restock</Button>
+        <TextBox Name="Output" MinWidth="200" MinHeight="100" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="336,10,10.333,0" Height="501" Width="247" TextWrapping="Wrap"></TextBox>
+    </Grid>
+</Window>
